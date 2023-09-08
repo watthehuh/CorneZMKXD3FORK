@@ -10,6 +10,154 @@
 #include <dt-bindings/zmk/mouse.h>
 
 
+/ {
+    macros {
+        Date: Date {
+            compatible = "zmk,behavior-macro";
+            label = "DATE";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH &kp NUMBER_9 &kp SLASH &kp NUMBER_2 &kp NUMBER_0 &kp NUMBER_2 &kp NUMBER_3>;
+        };
+        BENLLW: BENLLW {
+            compatible = "zmk,behavior-macro";
+            label = "BENLLW";
+            #binding-cells = <0>;
+            bindings = <&kp B &kp E &kp N &kp L &kp L &kp W &kp AT &kp G &kp M &kp A &kp I &kp L &kp PERIOD &kp C &kp O &kp M>;
+        };
+        Joyce18889: Joyce18889 {
+            compatible = "zmk,behavior-macro";
+            label = "JOYCE18889";
+            #binding-cells = <0>;
+            bindings = <&kp J &kp O &kp Y &kp C &kp E &kp NUMBER_1 &kp NUMBER_8 &kp NUMBER_8 &kp NUMBER_8 &kp NUMBER_9 &kp AT_SIGN &kp G &kp M &kp A &kp I &kp L &kp PERIOD &kp C &kp O &kp M>;
+        };
+        macro_doherty: macro_doherty {
+            label = "macro_doherty";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp B &kp E &kp N &kp DOT &kp L &kp E &kp E &kp AT &kp D &kp O &kp H &kp E &kp R &kp T &kp Y &kp DOT &kp C &kp O &kp DOT &kp U &kp K>;
+        };
+        teresachng: teresachng {
+            compatible = "zmk,behavior-macro";
+            label = "TERESACHNG";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp E &kp R &kp E &kp S &kp A &kp M &kp G &kp C &kp H &kp N &kp G &kp AT_SIGN &kp G &kp M &kp A &kp I &kp L &kp PERIOD &kp C &kp O &kp M>;
+        };
+        ben: ben {
+            compatible = "zmk,behavior-macro";
+            label = "BEN";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS &kp B &kp E &kp N>;
+        };
+    };
+};
+
+/ {
+    combos {
+        compatible = "zmk,combos";
+
+        CTRLbackspace {
+            bindings = <&kp LC(BACKSPACE)>;
+            key-positions = <22 21>;
+        };
+
+        Shift {
+            bindings = <&kp MINUS>;
+            key-positions = <32 33>;
+        };
+
+        Date {
+            bindings = <&Date>;
+            key-positions = <18 19>;
+        };
+
+        Ben {
+            bindings = <&none>;
+            key-positions = <31 32 33>;
+        };
+
+        plus {
+            bindings = <&kp PLUS>;
+            key-positions = <31 32>;
+        };
+
+        Times {
+            bindings = <&kp ASTERISK>;
+            key-positions = <7 8>;
+        };
+
+        undo {
+            bindings = <&kp LC(Z)>;
+            key-positions = <1 25>;
+        };
+
+        cut {
+            bindings = <&kp LC(X)>;
+            key-positions = <1 26>;
+        };
+
+        copy {
+            bindings = <&kp LC(C)>;
+            key-positions = <1 27>;
+        };
+
+        paste {
+            bindings = <&kp V>;
+            key-positions = <1 28>;
+        };
+
+        Capslock {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <1 2 3 4>;
+        };
+
+        Numlock {
+            bindings = <&kp KP_NUMLOCK>;
+            key-positions = <7 8 9 10>;
+        };
+
+        CTRLW {
+            bindings = <&kp LC(W)>;
+            key-positions = <1 2>;
+        };
+
+        CtrlR {
+            bindings = <&kp R>;
+            key-positions = <1 4>;
+        };
+
+        CtrlT {
+            bindings = <&kp LC(T)>;
+            key-positions = <1 5>;
+        };
+
+        CtrlB {
+            bindings = <&kp LC(B)>;
+            key-positions = <1 29>;
+        };
+
+        LockWinL {
+            bindings = <&kp LG(L)>;
+            key-positions = <10 21>;
+        };
+
+        CtrlA {
+            bindings = <&kp LC(A)>;
+            key-positions = <1 13>;
+        };
+
+        CtrlF {
+            bindings = <&kp LC(F)>;
+            key-positions = <1 16>;
+        };
+
+        Equals {
+            bindings = <&kp EQUAL>;
+            key-positions = <9 10>;
+        };
+    };
+};
 
 / {
     keymap {
