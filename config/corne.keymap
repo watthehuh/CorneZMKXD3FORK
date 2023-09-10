@@ -188,11 +188,11 @@
 
             label = "Base";
             bindings = <
-&kp LG(NUMBER_1)  &hm LCTRL Q  &kp W  &kp E  &kp R  &kp T         &kp Y      &kp U  &kp I      &kp O    &hm LGUI P  &kp LC(C)
-&kp LG(NUMBER_3)  &kp A        &kp S  &kp D  &kp F  &kp G         &kp H      &kp J  &kp K      &kp L    &kp BACKSPACE    &kp LC(X)
-&kp LG(NUMBER_4)  &kp Z        &kp X  &kp C  &kp V  &kp B         &kp N      &kp M  &kp COMMA  &kp DOT  &kp RET     &kp LC(V)
-                                      &none  &mo 1  &kp LSHIFT    &kp SPACE  &mo 2  &none
->;
+&hm LCTRL Q  &kp W  &kp E  &kp R  &kp T       &kp LG(NUMBER_1)    &kp LC(C)     &kp Y      &kp U  &kp I      &kp O    &hm LGUI P
+&kp A        &kp S  &kp D  &kp F  &kp G       &kp LG(NUMBER_3)    &kp LC(X)     &kp H      &kp J  &kp K      &kp L    &kp BACKSPACE
+&kp Z        &kp X  &kp C  &kp V  &kp B       &kp LG(NUMBER_4)    &kp LC(V)     &kp N      &kp M  &kp COMMA  &kp DOT  &kp RET
+                           &mo 1  &kp LSHIFT  &kp LCTRL           &kp LEFT_ALT  &kp SPACE  &mo 2
+            >;
         };
 
         lower_layer {
@@ -204,11 +204,11 @@
 
             label = "Lower";
             bindings = <
-&kp LG(NUMBER_1)  &kp LCTRL   &mkp RCLK  &kp UP    &mkp LCLK  &mwh SCROLL_UP      &kp COLON   &kp N7        &kp NUMBER_8  &kp NUMBER_9  &kp DELETE     &kp LC(C)
-&kp LG(NUMBER_5)  &kp LSHIFT  &kp LEFT   &kp DOWN  &kp RIGHT  &mwh SCROLL_DOWN    &kp SLASH   &kp N4        &kp N5        &kp NUMBER_6  &kp BACKSPACE  &kp LC(X)
-&kp LG(NUMBER_8)  &mo 3       &kp HOME   &kp LALT  &kp END    &kp TAB             &kp PERIOD  &kp N1        &kp NUMBER_2  &kp N3        &kp RET        &kp LC(V)
-                                         &mo 4     &none      &kp ESC             &kp SPACE   &kp NUMBER_0  &none
->;
+&kp LCTRL   &mkp RCLK  &kp UP    &mkp LCLK  &mwh SCROLL_UP    &kp LC(C)    &kp LG(NUMBER_1)  &kp COLON   &kp N7        &kp NUMBER_8  &kp NUMBER_9  &kp DELETE
+&kp LSHIFT  &kp LEFT   &kp DOWN  &kp RIGHT  &mwh SCROLL_DOWN  &kp LC(X)    &kp LG(N5)        &kp SLASH   &kp N4        &kp N5        &kp NUMBER_6  &kp BACKSPACE
+&mo 3       &kp HOME   &kp LALT  &kp END    &kp TAB           &kp LC(V)    &kp LG(N8)        &kp PERIOD  &kp N1        &kp NUMBER_2  &kp N3        &kp RET
+                                 &none      &kp ESC           &mo 4        &none             &kp SPACE   &kp NUMBER_0
+            >;
         };
 
         raise_layer {
@@ -220,31 +220,30 @@
 
             label = "Raise";
             bindings = <
-&trans  &kp LCTRL       &trans            &trans             &trans  &trans        &kp EXCL       &kp AT    &kp STAR   &kp LPAR  &kp RPAR      &none
-&trans  &kp LEFT_SHIFT  &trans            &trans             &trans  &trans        &kp SEMICOLON  &kp DQT   &kp EQUAL  &kp BSLH  &kp DEL       &none
-&trans  &kp TILDE       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &trans        &kp COLON      &kp APOS  &kp MINUS  &kp FSLH  &kp QUESTION  &none
-                                          &none              &none   &kp LSHIFT    &none          &trans    &mo 4
->;
+&kp LCTRL       &trans            &trans             &trans  &trans  &trans        &none  &kp EXCL       &kp AT    &kp STAR   &kp LPAR  &kp RPAR
+&kp LEFT_SHIFT  &trans            &trans             &trans  &trans  &trans        &none  &kp SEMICOLON  &kp DQT   &kp EQUAL  &kp BSLH  &kp DEL
+&kp TILDE       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &trans  &trans        &none  &kp COLON      &kp APOS  &kp MINUS  &kp FSLH  &kp QUESTION
+                                                     &none   &none   &kp LSHIFT    &mo 4  &none          &trans
+            >;
         };
 
         layer_3 {
             bindings = <
-&none  &kp LG(C_PAUSE)  &trans          &kp LG(UP_ARROW)  &trans         &kp LC(PAGE_UP)      &kp F1   &kp F2   &kp F3      &kp F4  &kp F5   &none
-&none  &kp LEFT_SHIFT   &kp LG(LEFT)    &kp LG(DOWN)      &kp LG(RIGHT)  &kp LC(PAGE_DOWN)    &kp F6   &kp F7   &kp F8      &kp F9  &kp F10  &none
-&none  &trans           &macro_doherty  &BENLLW           &Joyce18889    &teresachng          &kp F11  &kp F12  &kp LS(F2)  &none   &none    &none
-                                        &none             &trans         &kp F5               &none    &none    &none
->;
-        };layer_4 {
-         bindings = <
-&bt BT_CLR    &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &bt BT_CLR
-&bt BT_SEL 0  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &bt BT_SEL 0
-&bt BT_SEL 1  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &bt BT_SEL 1
-                              &trans  &trans  &trans    &trans  &trans  &trans
->;};
+&kp LG(C_PAUSE)  &trans          &kp LG(UP_ARROW)  &trans         &kp LC(PAGE_UP)    &none     &none  &kp F1   &kp F2   &kp F3      &kp F4         &kp F5
+&kp LEFT_SHIFT   &kp LG(LEFT)    &kp LG(DOWN)      &kp LG(RIGHT)  &kp LC(PAGE_DOWN)  &none     &none  &kp F6   &kp F7   &kp F8      &kp F9         &kp F10
+&trans           &macro_doherty  &BENLLW           &Joyce18889    &teresachng        &none     &none  &kp F11  &kp F12  &kp LS(F2)  &kp LC(LA(A))  &kp LA(LC(NUMBER_1))
+                                                   &none          &trans             &kp F5    &none  &none    &none
+            >;
+        };
 
-
-
-
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &bt BT_CLR      &bt BT_CLR    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &bt BT_SEL 0    &bt BT_SEL 0  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &bt BT_SEL 1    &bt BT_SEL 1  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans          &trans        &trans  &trans
+            >;
+        };
     };
 };
-    
+
