@@ -59,102 +59,106 @@
 
         CTRLbackspace {
             bindings = <&kp LC(BACKSPACE)>;
-            key-positions = <22 21>;
+            key-positions = <0 23>;
         };
 
-        Shift {
+        Hyphen {
             bindings = <&kp MINUS>;
-            key-positions = <32 33>;
+            key-positions = <33 34>;
         };
 
         Date {
             bindings = <&Date>;
-            key-positions = <18 19>;
+            key-positions = <19 20>;
+            layers = <1>;
         };
 
         Ben {
             bindings = <&none>;
-            key-positions = <31 32 33>;
+            key-positions = <32 33 34>;
         };
 
         plus {
             bindings = <&kp PLUS>;
-            key-positions = <31 32>;
+            key-positions = <32 33>;
+            layers = <1>;
         };
 
         Times {
             bindings = <&kp ASTERISK>;
-            key-positions = <7 8>;
+            key-positions = <8 9>;
+            layers = <1>;
         };
 
         undo {
             bindings = <&kp LC(Z)>;
-            key-positions = <1 25>;
+            key-positions = <0 24>;
         };
 
         cut {
             bindings = <&kp LC(X)>;
-            key-positions = <1 26>;
+            key-positions = <0 25>;
         };
 
         copy {
             bindings = <&kp LC(C)>;
-            key-positions = <1 27>;
+            key-positions = <0 26>;
         };
 
         paste {
             bindings = <&kp V>;
-            key-positions = <1 28>;
+            key-positions = <0 27>;
         };
 
         Capslock {
             bindings = <&kp CAPSLOCK>;
-            key-positions = <1 2 3 4>;
+            key-positions = <1 2 3 0>;
         };
 
         Numlock {
             bindings = <&kp KP_NUMLOCK>;
-            key-positions = <7 8 9 10>;
+            key-positions = <8 9 10 11>;
         };
 
         CTRLW {
             bindings = <&kp LC(W)>;
-            key-positions = <1 2>;
+            key-positions = <1 0>;
         };
 
         CtrlR {
             bindings = <&kp R>;
-            key-positions = <1 4>;
+            key-positions = <0 3>;
         };
 
         CtrlT {
             bindings = <&kp LC(T)>;
-            key-positions = <1 5>;
+            key-positions = <0 4>;
         };
 
         CtrlB {
             bindings = <&kp LC(B)>;
-            key-positions = <1 29>;
+            key-positions = <28 0>;
         };
 
         LockWinL {
             bindings = <&kp LG(L)>;
-            key-positions = <10 21>;
+            key-positions = <11 22>;
         };
 
         CtrlA {
             bindings = <&kp LC(A)>;
-            key-positions = <1 13>;
+            key-positions = <12 0>;
         };
 
         CtrlF {
             bindings = <&kp LC(F)>;
-            key-positions = <1 16>;
+            key-positions = <0 15>;
         };
 
         Equals {
             bindings = <&kp EQUAL>;
-            key-positions = <9 10>;
+            key-positions = <10 11>;
+            layers = <1>;
         };
     };
 };
