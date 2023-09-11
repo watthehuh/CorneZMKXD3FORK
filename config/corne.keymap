@@ -48,7 +48,7 @@
             compatible = "zmk,behavior-macro";
             label = "BEN";
             #binding-cells = <0>;
-            bindings = <&kp MINUS &kp B &kp E &kp N>;
+            bindings = <&kp MINUS &kp LS(B) &kp E &kp N>;
         };
     };
 };
