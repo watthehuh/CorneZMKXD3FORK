@@ -59,7 +59,7 @@
 
         CTRLbackspace {
             bindings = <&kp LC(BACKSPACE)>;
-            key-positions = <0 23>;
+            key-positions = <22 23>;
         };
 
         Hyphen {
