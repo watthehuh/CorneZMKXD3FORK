@@ -50,6 +50,18 @@
             #binding-cells = <0>;
             bindings = <&kp MINUS &kp LS(B) &kp E &kp N>;
         };
+        Mouse1: Mouse1 {
+            compatible = "zmk,behavior-macro";
+            label = "MOUSE1";
+            #binding-cells = <0>;
+            bindings = <&kp KP_DOT &kp KP_NUMBER_5>;
+        };
+        Mouse2: Mouse2 {
+            compatible = "zmk,behavior-macro";
+            label = "MOUSE2";
+            #binding-cells = <0>;
+            bindings = <&kp KP_MINUS &kp KP_NUMBER_5 &kp KP_SLASH>;
+        };
     };
 };
 
