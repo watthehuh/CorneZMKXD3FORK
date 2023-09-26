@@ -80,13 +80,13 @@
         };
 
         Date {
-            bindings = <&Date>;
+            bindings = <&kp F17>;
             key-positions = <19 20>;
             layers = <1>;
         };
 
         Ben {
-            bindings = <&ben>;
+            bindings = <&kp F18>;
             key-positions = <32 33 34>;
         };
 
