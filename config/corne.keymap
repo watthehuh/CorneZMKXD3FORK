@@ -188,6 +188,7 @@
         };
     };
 
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -212,13 +213,12 @@
         };
 
         raise_layer {
-
             label = "Raise";
             bindings = <
-&kp LCTRL       &trans            &trans             &trans  &trans          &trans    &none  &kp EXCL       &kp AT    &kp STAR   &kp LPAR  &kp RPAR
-&kp LEFT_SHIFT  &trans            &trans             &trans  &trans          &trans    &none  &kp SEMICOLON  &kp DQT   &kp EQUAL  &kp BSLH  &kp DEL
-&kp TILDE       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &trans          &trans    &none  &kp COLON      &kp APOS  &kp MINUS  &kp FSLH  &kp QUESTION
-                                                     &none   &kp LEFT_SHIFT  &none     &mo 4  &none          &trans
+&kp LCTRL       &mkp RCLK         &mmv MOVE_UP       &mkp LCLK        &mwh SCROLL_UP     &teresachng    &macro_doherty  &kp EXCL       &kp AT    &kp STAR   &kp LPAR  &kp RPAR
+&kp LEFT_SHIFT  &mmv MOVE_LEFT    &mmv MOVE_DOWN     &mmv MOVE_RIGHT  &mwh SCROLL_DOWN   &none          &BENLLW         &kp SEMICOLON  &kp DQT   &kp EQUAL  &kp BSLH  &kp DEL
+&kp TILDE       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans           &trans             &none          &Joyce18889     &kp COLON      &kp APOS  &kp MINUS  &kp FSLH  &kp QUESTION
+                                                     &none            &kp LEFT_SHIFT     &none          &mo 4           &none          &trans
             >;
         };
 
@@ -226,7 +226,7 @@
             bindings = <
 &kp LG(C_PAUSE)  &mkp RCLK         &kp LS(LC(UP_ARROW))  &mkp LCLK          &kp LC(PAGE_UP)    &kp LC(C)    &none  &kp F1   &kp F2   &kp F3      &kp F4         &kp F5
 &kp LEFT_SHIFT   &kp LS(LC(LEFT))  &kp LS(LC(DOWN))      &kp LS(LC(RIGHT))  &kp LC(PAGE_DOWN)  &kp LC(X)    &none  &kp F6   &kp F7   &kp F8      &kp F9         &kp F10
-&trans           &macro_doherty    &BENLLW               &Joyce18889        &teresachng        &kp LC(V)    &none  &kp F11  &kp F12  &kp LS(F2)  &kp LC(LA(A))  &kp LA(LC(NUMBER_1))
+&trans           &kp F13           &kp F14               &kp F15            &kp F16            &kp LC(V)    &none  &kp F11  &kp F12  &kp LS(F2)  &kp LC(LA(A))  &kp LA(LC(NUMBER_1))
                                                          &none              &kp F5             &none        &none  &none    &none
             >;
         };
