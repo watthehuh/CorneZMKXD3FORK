@@ -196,7 +196,7 @@
             label = "Base";
             bindings = <
 &hm LCTRL Q  &kp W  &kp E  &kp R  &kp T       &kp LG(NUMBER_1)    &kp LC(C)     &kp Y      &kp U  &kp I      &kp O    &hm LGUI P
-&kp A        &kp S  &kp D  &kp F  &kp G       &kp LG(NUMBER_3)    &kp LC(X)     &kp H      &kp J  &kp K      &kp L    &kp BACKSPACE
+&kp A        &kp S  &kp D  &kp F  &kp G       &kp LG(NUMBER_6)    &kp LC(X)     &kp H      &kp J  &kp K      &kp L    &kp BACKSPACE
 &kp Z        &kp X  &kp C  &kp V  &kp B       &kp LG(NUMBER_4)    &kp LC(V)     &kp N      &kp M  &kp COMMA  &kp DOT  &kp RET
                            &mo 1  &kp LSHIFT  &kp LCTRL           &kp LEFT_ALT  &kp SPACE  &mo 2
             >;
@@ -205,29 +205,29 @@
         lower_layer {
             label = "Lower";
             bindings = <
-&kp LCTRL   &mkp RCLK  &kp UP    &mkp LCLK  &mwh SCROLL_UP    &kp LG(N5)          &kp LG(NUMBER_1)  &kp COLON   &kp N7        &kp NUMBER_8  &kp NUMBER_9  &kp DELETE
-&kp LSHIFT  &kp LEFT   &kp DOWN  &kp RIGHT  &mwh SCROLL_DOWN  &kp LG(NUMBER_6)    &kp LG(N5)        &kp SLASH   &kp N4        &kp N5        &kp NUMBER_6  &kp BACKSPACE
-&mo 3       &kp HOME   &kp LALT  &kp END    &kp TAB           &kp LG(N8)          &kp LG(N8)        &kp PERIOD  &kp N1        &kp NUMBER_2  &kp N3        &kp RET
-                                 &none      &kp ESC           &mo 4               &none             &kp SPACE   &kp NUMBER_0
+&kp LCTRL   &mkp RCLK  &kp UP    &mkp LCLK  &mwh SCROLL_UP    &kp LG(N7)    &kp LG(NUMBER_1)  &kp COLON   &kp N7        &kp NUMBER_8  &kp NUMBER_9  &kp DELETE
+&kp LSHIFT  &kp LEFT   &kp DOWN  &kp RIGHT  &mwh SCROLL_DOWN  &kp LG(N9)    &kp LG(N5)        &kp SLASH   &kp N4        &kp N5        &kp NUMBER_6  &kp BACKSPACE
+&mo 3       &kp HOME   &kp LALT  &kp END    &kp TAB           &kp LG(N8)    &kp LG(N8)        &kp PERIOD  &kp N1        &kp NUMBER_2  &kp N3        &kp RET
+                                 &none      &kp ESC           &mo 4         &none             &kp SPACE   &kp NUMBER_0
             >;
         };
 
         raise_layer {
             label = "Raise";
             bindings = <
-&kp LCTRL       &mkp RCLK         &mmv MOVE_UP       &mkp LCLK        &mwh SCROLL_UP     &teresachng    &macro_doherty  &kp EXCL       &kp AT    &kp STAR   &kp LPAR  &kp RPAR
-&kp LEFT_SHIFT  &mmv MOVE_LEFT    &mmv MOVE_DOWN     &mmv MOVE_RIGHT  &mwh SCROLL_DOWN   &none          &BENLLW         &kp SEMICOLON  &kp DQT   &kp EQUAL  &kp BSLH  &kp DEL
-&kp TILDE       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans           &trans             &none          &Joyce18889     &kp COLON      &kp APOS  &kp MINUS  &kp FSLH  &kp QUESTION
-                                                     &none            &kp LEFT_SHIFT     &none          &mo 4           &none          &trans
+&kp LCTRL       &mkp RCLK         &mmv MOVE_UP       &mkp LCLK        &mwh SCROLL_UP    &teresachng    &macro_doherty  &kp EXCL       &kp AT    &kp STAR   &kp LPAR  &kp RPAR
+&kp LEFT_SHIFT  &mmv MOVE_LEFT    &mmv MOVE_DOWN     &mmv MOVE_RIGHT  &mwh SCROLL_DOWN  &none          &BENLLW         &kp SEMICOLON  &kp DQT   &kp EQUAL  &kp BSLH  &kp DEL
+&kp TILDE       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans           &trans            &none          &Joyce18889     &kp COLON      &kp APOS  &kp MINUS  &kp FSLH  &kp QUESTION
+                                                     &none            &kp LEFT_SHIFT    &none          &mo 4           &none          &trans
             >;
         };
 
         layer_3 {
             bindings = <
-&kp LG(C_PAUSE)  &mkp RCLK         &kp LS(LC(UP_ARROW))  &mkp LCLK          &kp LC(PAGE_UP)    &kp LC(C)    &none  &kp F1   &kp F2   &kp F3      &kp F4         &kp F5
-&kp LEFT_SHIFT   &kp LS(LC(LEFT))  &kp LS(LC(DOWN))      &kp LS(LC(RIGHT))  &kp LC(PAGE_DOWN)  &kp LC(X)    &none  &kp F6   &kp F7   &kp F8      &kp F9         &kp F10
-&trans           &kp F13           &kp F14               &kp F15            &kp F16            &kp LC(V)    &none  &kp F11  &kp F12  &kp LS(F2)  &kp LC(LA(A))  &kp LA(LC(NUMBER_1))
-                                                         &none              &kp F5             &none        &none  &none    &none
+&kp LG(C_PAUSE)  &mkp RCLK         &kp LS(LC(UP_ARROW))  &mkp LCLK          &kp LC(PAGE_UP)    &kp LC(F19)    &kp F22  &kp F1   &kp F2   &kp F3      &kp F4         &kp F5
+&kp LEFT_SHIFT   &kp LS(LC(LEFT))  &kp LS(LC(DOWN))      &kp LS(LC(RIGHT))  &kp LC(PAGE_DOWN)  &kp LC(F20)    &kp F23  &kp F6   &kp F7   &kp F8      &kp F9         &kp F10
+&trans           &kp F13           &kp F14               &kp F15            &kp F16            &kp LC(F21)    &kp F24  &kp F11  &kp F12  &kp LS(F2)  &kp LC(LA(A))  &kp LA(LC(NUMBER_1))
+                                                         &none              &kp F5             &none          &none    &none    &none
             >;
         };
 
