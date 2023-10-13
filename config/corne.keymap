@@ -224,10 +224,10 @@
 
         layer_3 {
             bindings = <
-&kp LG(C_PAUSE)  &mkp RCLK         &kp LS(LC(UP_ARROW))  &mkp LCLK          &kp LC(PAGE_UP)    &kp LC(F19)    &kp F22  &kp F1   &kp F2   &kp F3      &kp F4         &kp F5
-&kp LEFT_SHIFT   &kp LS(LC(LEFT))  &kp LS(LC(DOWN))      &kp LS(LC(RIGHT))  &kp LC(PAGE_DOWN)  &kp LC(F20)    &kp F23  &kp F6   &kp F7   &kp F8      &kp F9         &kp F10
-&trans           &kp F13           &kp F14               &kp F15            &kp F16            &kp LC(F21)    &kp F24  &kp F11  &kp F12  &kp LS(F2)  &kp LC(LA(A))  &kp LA(LC(NUMBER_1))
-                                                         &none              &kp F5             &none          &none    &none    &none
+&kp LG(C_PAUSE)  &mkp RCLK         &kp LS(LC(UP_ARROW))  &mkp LCLK          &kp LC(PAGE_UP)    &kp F19    &kp F22  &kp F1   &kp F2   &kp F3      &kp F4         &kp F5
+&kp LEFT_SHIFT   &kp LS(LC(LEFT))  &kp LS(LC(DOWN))      &kp LS(LC(RIGHT))  &kp LC(PAGE_DOWN)  &kp F20    &kp F23  &kp F6   &kp F7   &kp F8      &kp F9         &kp F10
+&trans           &kp F13           &kp F14               &kp F15            &kp F16            &kp F21    &kp F24  &kp F11  &kp F12  &kp LS(F2)  &kp LC(LA(A))  &kp LA(LC(NUMBER_1))
+                                                         &none              &kp F5             &none      &none    &none    &none
             >;
         };
 
