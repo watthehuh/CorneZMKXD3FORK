@@ -124,7 +124,7 @@
 
         Capslock {
             bindings = <&kp CAPSLOCK>;
-            key-positions = <1 2 3 0>;
+            key-positions = <12 13 15 14>;
         };
 
         Numlock {
