@@ -62,6 +62,13 @@
             #binding-cells = <0>;
             bindings = <&kp KP_MINUS &kp KP_NUMBER_5 &kp KP_SLASH>;
         };
+
+        atDoherty: atDoherty {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp AT_SIGN &kp D &kp O &kp H &kp E &kp R &kp T &kp Y &kp PERIOD &kp C &kp O &kp PERIOD &kp U &kp K>;
+            label = "ATDOHERTY";
+        };
     };
 };
 
@@ -213,10 +220,10 @@
 
         layer_3 {
             bindings = <
-&kp LG(C_PAUSE)  &mkp RCLK         &kp LS(LC(UP_ARROW))  &mkp LCLK          &kp LC(PAGE_UP)    &kp F19    &kp F19   &kp F1   &kp F2   &kp F3      &kp F4         &kp F5
-&kp LEFT_SHIFT   &kp LS(LC(LEFT))  &kp LS(LC(DOWN))      &kp LS(LC(RIGHT))  &kp LC(PAGE_DOWN)  &kp F20    &kp F20   &kp F6   &kp F7   &kp F8      &kp F9         &kp F10
-&trans           &kp F13           &kp F14               &kp F15            &kp F16            &none      &kp F21   &kp F11  &kp F12  &kp LS(F2)  &kp LC(LA(A))  &kp LA(LC(NUMBER_1))
-                                                         &none              &kp F5             &none      &none     &none    &none
+&kp LG(C_PAUSE)  &mkp RCLK         &kp LS(LC(UP_ARROW))  &mkp LCLK          &kp LC(PAGE_UP)    &kp F19      &kp F19   &kp F1   &kp F2   &kp F3      &kp F4         &kp F5
+&kp LEFT_SHIFT   &kp LS(LC(LEFT))  &kp LS(LC(DOWN))      &kp LS(LC(RIGHT))  &kp LC(PAGE_DOWN)  &kp F20      &kp F20   &kp F6   &kp F7   &kp F8      &kp F9         &kp F10
+&trans           &kp F13           &kp F14               &kp F15            &kp F16            &atDoherty   &kp F21   &kp F11  &kp F12  &kp LS(F2)  &kp LC(LA(A))  &kp LA(LC(NUMBER_1))
+                                                         &none              &kp F5             &none        &none     &none    &none
             >;
         };
 
