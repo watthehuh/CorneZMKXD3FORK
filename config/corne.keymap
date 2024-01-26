@@ -126,11 +126,6 @@
             key-positions = <8 9 10 11>;
         };
 
-        CTRLW {
-            bindings = <&kp LC(W)>;
-            key-positions = <1 0>;
-        };
-
         CtrlR {
             bindings = <&kp R>;
             key-positions = <0 3>;
