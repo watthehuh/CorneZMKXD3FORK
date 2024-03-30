@@ -4,11 +4,10 @@
  * SPDX-License-Identifier: MIT
  */
 
+#include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
-
 
 / {
     macros {
@@ -16,20 +15,23 @@
             compatible = "zmk,behavior-macro";
             label = "DATE";
             #binding-cells = <0>;
-            bindings = <&kp SLASH &kp NUMBER_9 &kp SLASH &kp NUMBER_2 &kp NUMBER_0 &kp NUMBER_2 &kp NUMBER_3>;
+            bindings = <&kp SLASH &kp NUMBER_4 &kp SLASH &kp NUMBER_2 &kp NUMBER_0 &kp NUMBER_2 &kp NUMBER_4>;
         };
+
         BENLLW: BENLLW {
             compatible = "zmk,behavior-macro";
             label = "BENLLW";
             #binding-cells = <0>;
             bindings = <&kp B &kp E &kp N &kp L &kp L &kp W &kp AT &kp G &kp M &kp A &kp I &kp L &kp PERIOD &kp C &kp O &kp M>;
         };
+
         Joyce18889: Joyce18889 {
             compatible = "zmk,behavior-macro";
             label = "JOYCE18889";
             #binding-cells = <0>;
             bindings = <&kp J &kp O &kp Y &kp C &kp E &kp NUMBER_1 &kp NUMBER_8 &kp NUMBER_8 &kp NUMBER_8 &kp NUMBER_9 &kp AT_SIGN &kp G &kp M &kp A &kp I &kp L &kp PERIOD &kp C &kp O &kp M>;
         };
+
         macro_doherty: macro_doherty {
             label = "macro_doherty";
             compatible = "zmk,behavior-macro";
@@ -38,24 +40,28 @@
                 <&macro_tap>,
                 <&kp B &kp E &kp N &kp DOT &kp L &kp E &kp E &kp AT &kp D &kp O &kp H &kp E &kp R &kp T &kp Y &kp DOT &kp C &kp O &kp DOT &kp U &kp K>;
         };
+
         teresachng: teresachng {
             compatible = "zmk,behavior-macro";
             label = "TERESACHNG";
             #binding-cells = <0>;
             bindings = <&kp T &kp E &kp R &kp E &kp S &kp A &kp M &kp G &kp C &kp H &kp N &kp G &kp AT_SIGN &kp G &kp M &kp A &kp I &kp L &kp PERIOD &kp C &kp O &kp M>;
         };
+
         ben: ben {
             compatible = "zmk,behavior-macro";
             label = "BEN";
             #binding-cells = <0>;
             bindings = <&kp MINUS &kp LS(B) &kp E &kp N>;
         };
+
         Mouse1: Mouse1 {
             compatible = "zmk,behavior-macro";
             label = "MOUSE1";
             #binding-cells = <0>;
             bindings = <&kp KP_DOT &kp KP_NUMBER_5>;
         };
+
         Mouse2: Mouse2 {
             compatible = "zmk,behavior-macro";
             label = "MOUSE2";
@@ -69,6 +75,27 @@
             bindings = <&kp AT_SIGN &kp D &kp O &kp H &kp E &kp R &kp T &kp Y &kp PERIOD &kp C &kp O &kp PERIOD &kp U &kp K>;
             label = "ATDOHERTY";
         };
+
+        Brackets: Brackets {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT>;
+            label = "BRACKETS";
+        };
+
+        ArrowBrackets: ArrowBrackets {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LESS_THAN &kp GREATER_THAN &kp LEFT>;
+            label = "ARROWBRACKETS";
+        };
+
+        SquareBrackets: SquareBrackets {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT>;
+            label = "SQUAREBRACKETS";
+        };
     };
 };
 
@@ -78,95 +105,110 @@
 
         CTRLbackspace {
             bindings = <&kp LC(BACKSPACE)>;
-            key-positions = <22 23>;
+            key-positions = <22 21>;
         };
 
         Hyphen {
             bindings = <&kp MINUS>;
-            key-positions = <33 34>;
+            key-positions = <33 32>;
         };
 
         Ben {
-            bindings = <&kp F18>;
-            key-positions = <32 33 34>;
+            bindings = <&kp F23>;
+            key-positions = <32 33 31>;
         };
 
         plus {
             bindings = <&kp PLUS>;
-            key-positions = <32 33>;
+            key-positions = <32 31>;
             layers = <1>;
         };
 
         Times {
             bindings = <&kp ASTERISK>;
-            key-positions = <8 9>;
+            key-positions = <8 7>;
             layers = <1>;
         };
 
         undo {
             bindings = <&kp LC(Z)>;
-            key-positions = <0 24>;
+            key-positions = <25 1>;
         };
 
         cut {
             bindings = <&kp LC(X)>;
-            key-positions = <0 25>;
+            key-positions = <26 1>;
         };
 
         copy {
             bindings = <&kp LC(C)>;
-            key-positions = <0 26>;
+            key-positions = <27 1>;
         };
 
         paste {
             bindings = <&kp V>;
-            key-positions = <0 27>;
+            key-positions = <1 28>;
         };
 
         Capslock {
             bindings = <&kp CAPSLOCK>;
-            key-positions = <12 13 15 14>;
+            key-positions = <13 15 14 16>;
         };
 
         Numlock {
             bindings = <&kp KP_NUMLOCK>;
-            key-positions = <8 9 10 11>;
+            key-positions = <8 9 7 6>;
         };
 
         CtrlR {
             bindings = <&kp R>;
-            key-positions = <0 3>;
+            key-positions = <1 4>;
         };
 
         CtrlT {
             bindings = <&kp LC(T)>;
-            key-positions = <0 4>;
+            key-positions = <1 5>;
         };
 
         CtrlB {
             bindings = <&kp LC(B)>;
-            key-positions = <28 0>;
+            key-positions = <1 29>;
         };
 
         LockWinL {
             bindings = <&kp LG(L)>;
-            key-positions = <11 22>;
+            key-positions = <21 10>;
         };
 
         CtrlA {
             bindings = <&kp LC(A)>;
-            key-positions = <12 0>;
+            key-positions = <1 13>;
         };
 
         CtrlF {
             bindings = <&kp LC(F)>;
-            key-positions = <0 15>;
+            key-positions = <16 1>;
         };
 
         Equals {
             bindings = <&kp EQUAL>;
-            key-positions = <10 11>;
+            key-positions = <10 9>;
+        };
+
+        F17Date {
+            bindings = <&kp F24>;
+            key-positions = <18 19>;
             layers = <1>;
+        };
+
+        brackets {
+            bindings = <&Brackets>;
+            key-positions = <6 7>;
+        };
+
+        squarebrackets {
+            bindings = <&SquareBrackets>;
+            key-positions = <4 5>;
         };
     };
 };
@@ -184,46 +226,45 @@
         };
     };
 
-
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             label = "Base";
             bindings = <
-&hm LCTRL Q  &kp W  &kp E  &kp R  &kp T       &kp LG(NUMBER_1)    &kp F19     &kp Y      &kp U  &kp I      &kp O    &hm LGUI P
-&kp A        &kp S  &kp D  &kp F  &kp G       &kp LG(NUMBER_6)    &kp F20     &kp H      &kp J  &kp K      &kp L    &kp BACKSPACE
-&kp Z        &kp X  &kp C  &kp V  &kp B       &kp LG(NUMBER_4)    &kp F21     &kp N      &kp M  &kp COMMA  &kp DOT  &kp RET
-                           &mo 1  &kp LSHIFT  &kp LCTRL           &kp LEFT_ALT  &kp SPACE  &mo 2
+&trans  &hm LCTRL Q  &kp W  &kp E  &kp R  &kp T             &kp Y      &kp U  &kp I      &kp O    &hm LGUI P     &trans
+&trans  &kp A        &kp S  &kp D  &kp F  &kp G             &kp H      &kp J  &kp K      &kp L    &kp BACKSPACE  &trans
+&trans  &kp Z        &kp X  &kp C  &kp V  &kp B             &kp N      &kp M  &kp COMMA  &kp DOT  &kp RET        &trans
+                            &mo 5  &mo 1  &kp LEFT_SHIFT    &kp SPACE  &mo 2  &mo 5
             >;
         };
 
         lower_layer {
             label = "Lower";
             bindings = <
-&kp LCTRL   &mkp RCLK  &kp UP    &mkp LCLK  &mwh SCROLL_UP    &kp LG(N7)    &kp F22    &kp COLON   &kp N7        &kp NUMBER_8  &kp NUMBER_9  &kp DELETE
-&kp LSHIFT  &kp LEFT   &kp DOWN  &kp RIGHT  &mwh SCROLL_DOWN  &kp LG(N9)    &kp F23    &kp SLASH   &kp N4        &kp N5        &kp NUMBER_6  &kp BACKSPACE
-&mo 3       &kp HOME   &kp LALT  &kp END    &kp TAB           &kp LG(N8)    &kp F17    &kp PERIOD  &kp N1        &kp NUMBER_2  &kp N3        &kp RET
-                                 &none      &kp ESC           &mo 4         &kp F24    &kp SPACE   &kp NUMBER_0
+&trans  &kp LCTRL   &mkp RCLK  &kp UP    &mkp LCLK  &mwh SCROLL_UP      &kp COLON   &kp N7      &kp NUMBER_8  &kp NUMBER_9  &kp DELETE     &trans
+&trans  &kp LSHIFT  &kp LEFT   &kp DOWN  &kp RIGHT  &mwh SCROLL_DOWN    &kp SLASH   &kp N4      &kp N5        &kp NUMBER_6  &kp BACKSPACE  &trans
+&trans  &mo 3       &kp HOME   &kp LALT  &kp END    &kp TAB             &kp PERIOD  &kp N1      &kp NUMBER_2  &kp N3        &kp RET        &trans
+                               &mo 4     &none      &kp ESCAPE          &kp SPACE   &kp PERIOD  &kp N0
             >;
         };
 
         raise_layer {
             label = "Raise";
             bindings = <
-&kp LCTRL       &mkp RCLK         &mmv MOVE_UP       &mkp LCLK        &mwh SCROLL_UP    &teresachng       &kp F19    &kp EXCL       &kp AT    &kp STAR   &kp LPAR  &kp RPAR
-&kp LEFT_SHIFT  &mmv MOVE_LEFT    &mmv MOVE_DOWN     &mmv MOVE_RIGHT  &mwh SCROLL_DOWN  &Joyce18889       &kp F20          &kp SEMICOLON  &kp DQT   &kp EQUAL  &kp BSLH  &kp DEL
-&kp TILDE       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans           &trans            &BENLLW           &kp F21       &kp COLON      &kp APOS  &kp MINUS  &kp FSLH  &kp QUESTION
-                                                     &none            &kp LEFT_SHIFT    &macro_doherty    &mo 4             &none          &trans
+&trans  &kp LCTRL       &mkp RCLK         &mmv MOVE_UP       &mkp LCLK        &mwh SCROLL_UP      &kp EXCL       &kp AT    &kp STAR   &kp LPAR  &kp RPAR      &trans
+&trans  &kp LEFT_SHIFT  &mmv MOVE_LEFT    &mmv MOVE_DOWN     &mmv MOVE_RIGHT  &mwh SCROLL_DOWN    &kp SEMICOLON  &kp DQT   &kp EQUAL  &kp BSLH  &kp DEL       &trans
+&trans  &kp TILDE       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans           &trans              &kp COLON      &kp APOS  &kp MINUS  &kp FSLH  &kp QUESTION  &trans
+                                          &none              &trans           &kp LSHIFT          &kp SPACE      &trans    &mo 4
             >;
         };
 
         layer_3 {
             bindings = <
-&kp LG(C_PAUSE)  &mkp RCLK         &kp LS(LC(UP_ARROW))  &mkp LCLK          &kp LC(PAGE_UP)    &kp F19      &kp F19   &kp F1   &kp F2   &kp F3      &kp F4         &kp F5
-&kp LEFT_SHIFT   &kp LS(LC(LEFT))  &kp LS(LC(DOWN))      &kp LS(LC(RIGHT))  &kp LC(PAGE_DOWN)  &kp F20      &kp F20   &kp F6   &kp F7   &kp F8      &kp F9         &kp F10
-&trans           &kp F13           &kp F14               &kp F15            &kp F16            &atDoherty   &kp F21   &kp F11  &kp F12  &kp LS(F2)  &kp LC(LA(A))  &kp LA(LC(NUMBER_1))
-                                                         &none              &kp F5             &none        &none     &none    &none
+&trans  &kp LG(C_PAUSE)  &mkp RCLK         &kp LS(LC(UP_ARROW))  &mkp LCLK          &kp LC(PAGE_UP)      &kp EXCL       &kp AT    &kp STAR   &kp LPAR  &kp RPAR      &trans
+&trans  &kp LEFT_SHIFT   &kp LS(LC(LEFT))  &kp LS(LC(DOWN))      &kp LS(LC(RIGHT))  &kp LC(PAGE_DOWN)    &kp SEMICOLON  &kp DQT   &kp EQUAL  &kp BSLH  &kp DEL       &trans
+&trans  &trans           &kp F13           &kp F14               &kp F15            &kp F16              &kp COLON      &kp APOS  &kp MINUS  &kp FSLH  &kp QUESTION  &trans
+                                           &macro_doherty        &trans             &kp F5               &kp SPACE      &mo 5     &mo 5
             >;
         };
 
@@ -233,6 +274,24 @@
 &trans  &trans  &trans  &trans  &trans  &bt BT_SEL 0    &bt BT_SEL 0  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &bt BT_SEL 1    &bt BT_SEL 1  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans          &trans        &trans  &trans
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(N5)        &kp F1   &kp F2   &kp F3      &kp F4   &kp F5   &trans
+&trans  &kp LG(NUMBER_6)  &kp LG(N7)        &kp LG(N8)        &kp LG(N9)        &kp F22           &kp F6   &kp F7   &kp F8      &kp F9   &kp F10  &trans
+&trans  &kp F17           &kp F18           &kp F19           &kp F20           &kp F21           &kp F11  &kp F12  &kp LS(F2)  &kp F23  &kp F24  &trans
+                                            &trans            &trans            &kp LEFT_SHIFT    &trans   &trans   &trans
+            >;
+        };
+
+        layer_6 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
