@@ -204,11 +204,13 @@
         brackets {
             bindings = <&Brackets>;
             key-positions = <6 7>;
+            layers = <1>;
         };
 
         squarebrackets {
             bindings = <&SquareBrackets>;
             key-positions = <4 5>;
+            layers = <1>;
         };
     };
 };
@@ -242,10 +244,10 @@
         lower_layer {
             label = "Lower";
             bindings = <
-&trans  &kp LCTRL   &mkp RCLK  &kp UP    &mkp LCLK  &mwh SCROLL_UP      &kp COLON   &kp N7      &kp NUMBER_8  &kp NUMBER_9  &kp DELETE     &trans
-&trans  &kp LSHIFT  &kp LEFT   &kp DOWN  &kp RIGHT  &mwh SCROLL_DOWN    &kp SLASH   &kp N4      &kp N5        &kp NUMBER_6  &kp BACKSPACE  &trans
-&trans  &mo 3       &kp HOME   &kp LALT  &kp END    &kp TAB             &kp PERIOD  &kp N1      &kp NUMBER_2  &kp N3        &kp RET        &trans
-                               &mo 4     &none      &kp ESCAPE          &kp SPACE   &kp N0      &kp PERIOD
+&trans  &kp LCTRL   &mkp RCLK  &kp UP    &mkp LCLK  &mwh SCROLL_UP      &kp COLON   &kp N7  &kp NUMBER_8  &kp NUMBER_9  &kp DELETE     &trans
+&trans  &kp LSHIFT  &kp LEFT   &kp DOWN  &kp RIGHT  &mwh SCROLL_DOWN    &kp SLASH   &kp N4  &kp N5        &kp NUMBER_6  &kp BACKSPACE  &trans
+&trans  &mo 3       &kp HOME   &kp LALT  &kp END    &kp TAB             &kp PERIOD  &kp N1  &kp NUMBER_2  &kp N3        &kp RET        &trans
+                               &mo 4     &none      &kp ESCAPE          &kp SPACE   &kp N0  &kp PERIOD
             >;
         };
 
