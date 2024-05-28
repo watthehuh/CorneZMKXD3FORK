@@ -114,7 +114,7 @@
         };
 
         Ben {
-            bindings = <&kp F23>;
+            bindings = <&kp F24>;
             key-positions = <32 33 31>;
         };
 
