@@ -281,9 +281,9 @@
 
         layer_5 {
             bindings = <
-&trans  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(N5)        &kp LG(F13)  &kp LG(F14)  &kp LG(F15)  &kp LG(F16)  &kp LG(F17)  &trans
+&trans  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(N5)        &kp LG(F13)  &kp LG(F14)  &kp LG(F15)  &kp LG(F17)  &kp LG(F22)  &trans
 &trans  &kp LG(NUMBER_6)  &kp LG(N7)        &kp LG(N8)        &kp LG(N9)        &kp F19           &kp F20      &kp F21      &kp F22      &kp F23      &kp F24      &trans
-&trans  &kp F17           &kp F13           &kp F14           &kp F15           &kp F16           &kp LG(F22)  &kp LG(F23)  &kp LS(F2)   &kp F17      &kp F18      &trans
+&trans  &kp F17           &kp F13           &kp F14           &kp F15           &kp F16           &kp LG(F23)  &kp LG(F24)  &kp LS(F2)   &kp F17      &kp F18      &trans
                                             &trans            &mo 4             &kp LEFT_SHIFT    &trans       &mo 4        &trans
             >;
         };
